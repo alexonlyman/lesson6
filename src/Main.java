@@ -3,14 +3,30 @@ public class Main {
 
 
         boolean clientOS = false;
-        if(clientOS)
+                 if(clientOS)
         {
                 System.out.println("Установите версию IOS по ссылке");
-        }else
+        }
+                 else
+
         {       System.out.println("Установите версию Amdroid по ссылке ");
 
         }
         // задача 2
+                int clientDeviceYear = 2014;
+                 if (clientDeviceYear<=2015 && clientOS){
+                         System.out.println("Установи облегченную версию для IOS");
+                 }else if (clientDeviceYear>2015 && clientOS) {
+                         System.out.println("Установите приложение для IOS");
+                } else if (clientDeviceYear<=2015&&clientOS==false){
+                     System.out.println("Установи облегченную версию для Android");
+                 } else {System.out.println("Установите приложение для Android");}
+
+
+
+
+
+        }
 
 
 
@@ -20,4 +36,4 @@ public class Main {
 
         }
 
-}
+
